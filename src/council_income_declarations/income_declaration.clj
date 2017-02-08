@@ -4,14 +4,13 @@
 
 (declare income-declaration sting->number)
 
-(defn scrape [url]
+(defn read-raw [url]
   (with-open [is (io/input-stream url)]
     (-> is
         WordExtractor.
-        .getText
-        income-declaration)))
+        .getText)))
 
-(defn- income-declaration [text]
+(defn parse [text]
   {:post          (re-find #"(?<=Замещаемая должность\t).+" text)
    :income        (-> (re-find #"1\tДекларированный годовой доход.+\t(.+)" text)
                       (get 1)
