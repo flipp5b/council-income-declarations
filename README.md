@@ -1,36 +1,6 @@
-# council-income-statements
+# The Federation Council Members' Income Declarations
 
-FIXME: description
-
-## Installation
-
-Download from http://example.com/FIXME.
-
-## Usage
-
-FIXME: explanation
-
-    $ java -jar council-income-statements-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2017 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+This is a tool for scraping (from [official site](http://council.gov.ru/structure/machinery/vacancies/property/)) 
+and analyzing the Federation Council members' income declarations.
+  
+But, actually, this is just a reason to play with Clojure :)
